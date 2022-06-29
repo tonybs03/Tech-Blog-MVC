@@ -18,6 +18,11 @@ Comment.init({
             len: [3]
         }
     },
+    date_com_created: {
+        type: DataTypes.DATE,
+        allowNull: false,
+        defaultValue: DataTypes.NOW,
+    },
     user_id: {
         type: DataTypes.INTEGER,
         allowNull: false,

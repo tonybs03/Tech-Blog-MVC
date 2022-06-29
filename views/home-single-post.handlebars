@@ -3,15 +3,14 @@
     {{> home-one-post post}}
 
     <hr>
-    <hr>
-    {{#if loggedIn}}
-    <form class="comment-form">
-        <div>
-            <textarea name="comment-body"></textarea>
-        </div>
 
+    {{#if loggedIn}}
+    <form class="com-form">
         <div>
-            <button type="submit">add comment</button>
+            <textarea name="com-body"></textarea>
+        </div>
+        <div>
+            <button type="submit" class="post-btn">ADD COMMENT</button>
         </div>
     </form>
     <hr>
@@ -21,11 +20,14 @@
     <a href="/login" class="signupkey"> LOGIN TO COMMENT</a>
 
     {{/if}}
-
-    {{!-- {{> comments post.comments}} --}}
+    <hr>
+    <hr>
+    <h3>COMMENTS</h3>
+    <hr>
+    {{> all-comments post.comments}}
 
     {{#if loggedIn}}
-    <script src="/javascript/comment.js"></script>
+    <script src="/scripts/postcomment.js"></script>
     {{/if}}
 </div>
 

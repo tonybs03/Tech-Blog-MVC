@@ -1,0 +1,13 @@
+<div class="all-comments">
+    {{#each this}}
+    <section class="comment">
+        <div class="meta">
+            {{user.username}} on {{format_time date_com_created}}
+        </div>
+        <div>
+            {{com_content}}
+        </div>
+    </section>
+    <hr>
+    {{/each}}
+</div>
