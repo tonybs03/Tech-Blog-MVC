@@ -4,6 +4,7 @@
 
 ## Description
 This is my first attempt at making a post-based blog using MVC technologies. 
+It has been deployed to Heroku.
 
 ![This is an image](SS.png)
 
