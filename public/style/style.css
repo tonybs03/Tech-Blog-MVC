@@ -81,7 +81,7 @@ input[type=password] {
   box-sizing: border-box;
 }
 
-.login-btn, .signup-btn, .new-post-btn, .post-btn {
+.login-btn, .signup-btn, .new-post-btn, .post-btn, .btd-btn {
   background-color: var(--bistre);
   border: none;
   color: white;
@@ -103,7 +103,7 @@ input[type=password] {
   border-radius: 3px;
 }
 
-.login-btn:hover, .signup-btn:hover, .new-post-btn:hover, .post-btn:hover {
+.login-btn:hover, .signup-btn:hover, .new-post-btn:hover, .post-btn:hover, .btd-btn:hover {
   background-color: var(--bistre);
   box-shadow: 0 8px 16px 0 var(--bistre);
   font-size: 24px;
@@ -134,3 +134,63 @@ input[type=password] {
   justify-content: center;
 }
 
+.post-list {
+  justify-content: center;
+  text-align: center;
+  width: 50%;
+  background-color: var(--cinereous);
+  margin: 0 auto;
+  margin-top: 3%;
+  padding: 1%;
+  list-style: none;
+}
+
+.single-post {
+  border: 3px solid var(--bistre);
+  margin-bottom: 10px;
+}
+
+.post-header {
+  background-color: var(--bistre);
+  color: var(--bisque);
+  padding: 3px;
+}
+
+.post-name {
+  font-size: 18px;
+  color: var(--bisque);
+}
+
+.post-name:link, .post-name:visited {
+  color: var(--bisque);
+}
+
+.post-name:hover, .post-name:active {
+  font-size: 24px;
+  text-shadow:0px 0px 10px var(--bisque);
+  -moz-transition: all 0.15s ease-in;
+  -o-transition: all 0.15s ease-in;
+  -webkit-transition: all 0.15s ease-in;
+  transition: all 0.15s ease-in;
+  text-decoration: none;
+}
+
+.post-info {
+  font-size: 12px;
+}
+
+.home-single-post {
+  justify-content: center;
+  text-align: center;
+  width: 50%;
+  background-color: var(--cinereous);
+  margin: 0 auto;
+  margin-top: 3%;
+  padding: 1%;
+}
+
+.db-all-posts {
+  margin-top: 30px;
+  border: 3px solid var(--bistre);
+  padding: 3px;
+}

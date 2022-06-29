@@ -1,0 +1,25 @@
+<section class="postform-section">
+
+    <div class="postform-header tw">
+        <h1>Edit Post</h1>
+    </div>
+
+    <div class="postform-body tw">
+        <form class="edit-post-form postform-form">
+                <label for="pt">Title</label> <br>
+                <input type="text" id="post-t" value="{{post.title}}"/> <br> <hr>
+                <label for="pc">Content</label> <br>
+                <textarea class="form-control" id="post-c" rows="3">{{post.content}}</textarea>
+
+            <div>
+                <button type="submit" class="post-btn">SAVE</button>
+                <br>
+                <button class="post-btn post-delete-btn">DELETE</button>
+            </div>
+        </form>
+    </div>
+
+</section>
+
+<script src="/scripts/save-edited-post.js"></script>
+<script src="/scripts/deletepost.js"></script>

@@ -1,21 +1,24 @@
-<section class="dashboard-header">
-    <button type="submit" id="new-post-btn" class="new-post-btn">+ CRATE NEW POST</button>
+<section class="dashboard-header tw">
+    <button type="submit" id="new-post-btn" class="new-post-btn">+ CERATE NEW POST</button>
 </section>
 
 
 
-{{!-- {{#if posts.length}}
-<section>
-    <h2>Your Dashboard</h2>
+{{#if posts.length}}
+<section class="tw">
     <ul class="post-list">
+        <h2>My Tech-Post Dashboard</h2>
         {{#each posts as |post|}}
-        <li>
-            {{> post-info post}}
-            <a href="/dashboard/edit/{{post.id}}" class="edit-link">edit post</a>
+        <li class="db-all-posts">
+            {{> db-post-each post}}
+            <a href="/dashboard/edit/{{post.id}}" class="signupkey">EDIT THIS POST</a>
         </li>
         {{/each}}
     </ul>
 </section>
-{{/if}} --}}
+{{/if}}
+
+<br>
+<br>
 
 <script src="/scripts/createpost.js"></script>

@@ -1,0 +1,32 @@
+<div class="home-single-post tw">
+
+    {{> home-one-post post}}
+
+    <hr>
+    <hr>
+    {{#if loggedIn}}
+    <form class="comment-form">
+        <div>
+            <textarea name="comment-body"></textarea>
+        </div>
+
+        <div>
+            <button type="submit">add comment</button>
+        </div>
+    </form>
+    <hr>
+    <a href="/dashboard" class="signupkey"> &larr; Go to dashboard</a>
+    {{else}}
+
+    <a href="/login" class="signupkey"> LOGIN TO COMMENT</a>
+
+    {{/if}}
+
+    {{!-- {{> comments post.comments}} --}}
+
+    {{#if loggedIn}}
+    <script src="/javascript/comment.js"></script>
+    {{/if}}
+</div>
+
+
