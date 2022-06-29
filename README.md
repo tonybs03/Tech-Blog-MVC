@@ -6,7 +6,7 @@
 This is my first attempt at making a post-based blog using MVC technologies. 
 It has been deployed to Heroku.
 
-Click here for the application!(https://warm-lake-11930.herokuapp.com/)
+[Click here for the application!](https://warm-lake-11930.herokuapp.com/)
 
 ![This is an image](SS.png)
 
